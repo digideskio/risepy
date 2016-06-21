@@ -1,4 +1,5 @@
 {% extends 'posts/base.html' %}
+{% load comments %}
 {% load staticfiles %}
 {% block main %}
 
@@ -110,86 +111,89 @@
                </div>
             </div>
             <!-- Article Comments Section -->
-            <div class="artcl-comments float-width">
-               <h3 class="sec-title">COMMENTS</h3>
-               <div class="comments-section float-width">
-                  <div class="single-comment">
-                     <img alt="" class="blocky" src="img/samples/t1.jpg" />
-                     <div class="the-comment lefty">
-                        <h4>
-                           <span class="comntr-nm lefty">Eiad Ashraf </span>
-                           <span class="cmnt-dt lefty"> at 14 July 2013</span>
-                           <a class="righty" href="#"><span class="cmnt-reply">Reply</span></a>
-                        </h4>
-                        <p>Praesent nec risus non tellus scelerisque congue eu eu purus. Aliquam id porta lacus. Morbi eleifend ultricies placerat. Nullam luctus lectus a risus congue scelerisque. In in fermentum nunc.</p>
-                     </div>
-                  </div>
-                  <div class="cmnt-dvdr"></div>
-                  <div class="single-comment reply-1">
-                     <img alt="" class="blocky" src="img/samples/t2.jpg" />
-                     <div class="the-comment lefty">
-                        <h4>
-                           <span class="comntr-nm lefty">Soza </span>
-                           <span class="cmnt-dt lefty"> at 14 July 2013</span>
-                           <a class="righty" href="#"><span class="cmnt-reply">Reply</span></a>
-                        </h4>
-                        <p>Praesent nec risus non tellus scelerisque congue eu eu purus. Aliquam id porta lacus. Morbi eleifend ultricies placerat. Nullam luctus lectus a risus congue scelerisque. In in fermentum nunc.</p>
-                     </div>
-                  </div>
-                  <div class="cmnt-dvdr"></div>
-                  <div class="single-comment reply-1">
-                     <img alt="" class="blocky" src="img/samples/t3.jpg" />
-                     <div class="the-comment lefty">
-                        <h4>
-                           <span class="comntr-nm lefty">Zoom </span>
-                           <span class="cmnt-dt lefty"> at 14 July 2013</span>
-                           <a class="righty" href="#"><span class="cmnt-reply">Reply</span></a>
-                        </h4>
-                        <p>Praesent nec risus non tellus scelerisque congue eu eu purus. Aliquam id porta lacus. Morbi eleifend ultricies placerat. Nullam luctus lectus a risus congue scelerisque. In in fermentum nunc.</p>
-                     </div>
-                  </div>
-                  <div class="cmnt-dvdr"></div>
-                  <div class="single-comment reply-2">
-                     <img alt="" class="blocky" src="img/samples/t4.jpg">
-                     <div class="the-comment lefty">
-                        <h4>
-                           <span class="comntr-nm lefty">Ali Dawood </span>
-                           <span class="cmnt-dt lefty"> at 14 July 2013</span>
-                           <a class="righty" href="#"><span class="cmnt-reply">Reply</span></a>
-                        </h4>
-                        <p>Praesent nec risus non tellus scelerisque congue eu eu purus. Aliquam id porta lacus. Morbi eleifend ultricies placerat. Nullam luctus lectus a risus congue scelerisque. In in fermentum nunc.</p>
-                     </div>
-                  </div>
-                  <div class="cmnt-dvdr"></div>
-                  <div class="single-comment">
-                     <img alt="" class="blocky" src="img/samples/t5.jpg" />
-                     <div class="the-comment lefty">
-                        <h4>
-                           <span class="comntr-nm lefty">Miri Drik </span>
-                           <span class="cmnt-dt lefty"> at 14 July 2013</span>
-                           <a class="righty" href="#"><span class="cmnt-reply">Reply</span></a>
-                        </h4>
-                        <p>Praesent nec risus non tellus scelerisque congue eu eu purus. Aliquam id porta lacus. Morbi eleifend ultricies placerat. Nullam luctus lectus a risus congue scelerisque. In in fermentum nunc.</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="cmnt-reply-form float-width">
-                  <h3 class="sec-title">LEAVE A RESPONSE</h3>
-                  <form role="form">
-                     <div class="form-group">
-                        <input type="name" class="form-control" id="exampleInputName" placeholder="Name or nickname">
-                     </div>
-                     <div class="form-group">
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">
-                     </div>
-                     <div class="form-group">
-                        <input type="website" class="form-control" id="exampleInputWebsite" placeholder="Website (optional)">
-                     </div>
-                     <textarea class="form-control" rows="6" placeholder="Your comment"></textarea>
-                     <a class="cmnt-btn trans2" href="#">POST YOUR COMMENT</a>
-                  </form>
-               </div>
-            </div>
+{#            <div class="artcl-comments float-width">#}
+{#               <h3 class="sec-title">COMMENTS</h3>#}
+{#               <div class="comments-section float-width">#}
+{#                  <div class="single-comment">#}
+{#                     <img alt="" class="blocky" src="img/samples/t1.jpg" />#}
+{#                     <div class="the-comment lefty">#}
+{#                        <h4>#}
+{#                           <span class="comntr-nm lefty">Eiad Ashraf </span>#}
+{#                           <span class="cmnt-dt lefty"> at 14 July 2013</span>#}
+{#                           <a class="righty" href="#"><span class="cmnt-reply">Reply</span></a>#}
+{#                        </h4>#}
+{#                        <p>Praesent nec risus non tellus scelerisque congue eu eu purus. Aliquam id porta lacus. Morbi eleifend ultricies placerat. Nullam luctus lectus a risus congue scelerisque. In in fermentum nunc.</p>#}
+{#                     </div>#}
+{#                  </div>#}
+{#                  <div class="cmnt-dvdr"></div>#}
+{#                  <div class="single-comment reply-1">#}
+{#                     <img alt="" class="blocky" src="img/samples/t2.jpg" />#}
+{#                     <div class="the-comment lefty">#}
+{#                        <h4>#}
+{#                           <span class="comntr-nm lefty">Soza </span>#}
+{#                           <span class="cmnt-dt lefty"> at 14 July 2013</span>#}
+{#                           <a class="righty" href="#"><span class="cmnt-reply">Reply</span></a>#}
+{#                        </h4>#}
+{#                        <p>Praesent nec risus non tellus scelerisque congue eu eu purus. Aliquam id porta lacus. Morbi eleifend ultricies placerat. Nullam luctus lectus a risus congue scelerisque. In in fermentum nunc.</p>#}
+{#                     </div>#}
+{#                  </div>#}
+{#                  <div class="cmnt-dvdr"></div>#}
+{#                  <div class="single-comment reply-1">#}
+{#                     <img alt="" class="blocky" src="img/samples/t3.jpg" />#}
+{#                     <div class="the-comment lefty">#}
+{#                        <h4>#}
+{#                           <span class="comntr-nm lefty">Zoom </span>#}
+{#                           <span class="cmnt-dt lefty"> at 14 July 2013</span>#}
+{#                           <a class="righty" href="#"><span class="cmnt-reply">Reply</span></a>#}
+{#                        </h4>#}
+{#                        <p>Praesent nec risus non tellus scelerisque congue eu eu purus. Aliquam id porta lacus. Morbi eleifend ultricies placerat. Nullam luctus lectus a risus congue scelerisque. In in fermentum nunc.</p>#}
+{#                     </div>#}
+{#                  </div>#}
+{#                  <div class="cmnt-dvdr"></div>#}
+{#                  <div class="single-comment reply-2">#}
+{#                     <img alt="" class="blocky" src="img/samples/t4.jpg">#}
+{#                     <div class="the-comment lefty">#}
+{#                        <h4>#}
+{#                           <span class="comntr-nm lefty">Ali Dawood </span>#}
+{#                           <span class="cmnt-dt lefty"> at 14 July 2013</span>#}
+{#                           <a class="righty" href="#"><span class="cmnt-reply">Reply</span></a>#}
+{#                        </h4>#}
+{#                        <p>Praesent nec risus non tellus scelerisque congue eu eu purus. Aliquam id porta lacus. Morbi eleifend ultricies placerat. Nullam luctus lectus a risus congue scelerisque. In in fermentum nunc.</p>#}
+{#                     </div>#}
+{#                  </div>#}
+{#                  <div class="cmnt-dvdr"></div>#}
+{#                  <div class="single-comment">#}
+{#                     <img alt="" class="blocky" src="img/samples/t5.jpg" />#}
+{#                     <div class="the-comment lefty">#}
+{#                        <h4>#}
+{#                           <span class="comntr-nm lefty">Miri Drik </span>#}
+{#                           <span class="cmnt-dt lefty"> at 14 July 2013</span>#}
+{#                           <a class="righty" href="#"><span class="cmnt-reply">Reply</span></a>#}
+{#                        </h4>#}
+{#                        <p>Praesent nec risus non tellus scelerisque congue eu eu purus. Aliquam id porta lacus. Morbi eleifend ultricies placerat. Nullam luctus lectus a risus congue scelerisque. In in fermentum nunc.</p>#}
+{#                     </div>#}
+{#                  </div>#}
+{#               </div>#}
+{#               <div class="cmnt-reply-form float-width">#}
+{#                  <h3 class="sec-title">LEAVE A RESPONSE</h3>#}
+{#                  <form role="form">#}
+{#                     <div class="form-group">#}
+{#                        <input type="name" class="form-control" id="exampleInputName" placeholder="Name or nickname">#}
+{#                     </div>#}
+{#                     <div class="form-group">#}
+{#                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">#}
+{#                     </div>#}
+{#                     <div class="form-group">#}
+{#                        <input type="website" class="form-control" id="exampleInputWebsite" placeholder="Website (optional)">#}
+{#                     </div>#}
+{#                     <textarea class="form-control" rows="6" placeholder="Your comment"></textarea>#}
+{#                     <a class="cmnt-btn trans2" href="#">POST YOUR COMMENT</a>#}
+{#                  </form>#}
+{#               </div>#}
+{#            </div>#}
+
+             <br>
+      {% get_comment_count for posts.Posts 14 as comment_count %}.
             <!-- related Articles  -->
             <div class="artcl-reltd float-width">
                <h3 class="sec-title">RELATED POSTS</h3>

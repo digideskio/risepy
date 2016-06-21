@@ -15,22 +15,22 @@ def index(request):
     except Posts.DoesNotExist:
         raise Http404("No MyModel matches the given query.")
 
-    # url = "http://caprodseacs03.cloudapp.net/matches?completedLimit=2&inProgressLimit=2&upcomingLimit=0&format=json"
-    # response = urlopen(url)
-    # data = json.loads(response.read())
-    # matches = data['matchList']['matches']
-    # # print matches
-    #
-    # match_list = []
-    # for match in matches:
-    #     ob = ScoreLive()
-    #     ob.getScore(match)
-    #     match_list.append(ob.__dict__)
+    url = "http://caprodseacs03.cloudapp.net/matches?completedLimit=2&inProgressLimit=2&upcomingLimit=0&format=json"
+    response = urlopen(url)
+    data = json.loads(response.read())
+    matches = data['matchList']['matches']
+    # print matches
 
-    # print match_list
+    match_list = []
+    for match in matches:
+        ob = ScoreLive()
+        ob.getScore(match)
+        match_list.append(ob.__dict__)
+
+    print match_list
     context = {
         'post_list': post_list,
-        # 'match_list': match_list,
+        'match_list': match_list,
     }
     return render(request, 'posts/main.html', context)
 

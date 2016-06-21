@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'posts.apps.PostsConfig',
-
+    'django.contrib.sites',
+    'django_comments',
 ]
 
 TWITTER_FEED_CONSUMER_PUBLIC_KEY = '...'
