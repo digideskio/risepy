@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'posts.apps.PostsConfig',
     'django.contrib.sites',
     'django_comments',
+    'taggit',
+
 ]
 
 TWITTER_FEED_CONSUMER_PUBLIC_KEY = '...'

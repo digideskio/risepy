@@ -1,5 +1,9 @@
 var hidemenu;
 
+
+
+
+
 $(document).ready(function(){
     $(".tab1").click(function(){
         $("#tabbox0").toggleClass("off");

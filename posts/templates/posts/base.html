@@ -87,7 +87,7 @@
     color: #fff;
     float: left;
     text-align: left;
-    width: 6rem;
+
 }
 .match.cricket h4 {
     font-family: "Segoe UI Semibold","Segoe WP Semibold","Segoe WP","Segoe UI",Arial,Sans-Serif;
@@ -458,11 +458,65 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d42308', end
 }}
 
 
+{#            style for score on score page#}
+
+        .head-div{
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f1f1f1+48,e1e1e1+57,f6f6f6+100 */
+            background: #ffffff; /* Old browsers */
+            background: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 48%, #e1e1e1 57%, #f6f6f6 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 48%,#e1e1e1 57%,#f6f6f6 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #ffffff 0%,#f1f1f1 48%,#e1e1e1 57%,#f6f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+        }
+.right{
+    text-align: right;
+}
+.left{
+    text-align: left;
+}
+
+.center{
+    text-align: center;
+}
+.result{
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f85032+0,f16f5c+38,f6290c+64,f02f17+92,e73827+100 */
+background: #f85032; /* Old browsers */
+background: -moz-linear-gradient(top,  #f85032 0%, #f16f5c 38%, #f6290c 64%, #f02f17 92%, #e73827 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f85032 0%,#f16f5c 38%,#f6290c 64%,#f02f17 92%,#e73827 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f85032 0%,#f16f5c 38%,#f6290c 64%,#f02f17 92%,#e73827 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=0 ); /* IE6-9 */
+
+}
+.res{
+    height: 90px;
+
+    font-style: oblique;
+    color: #FFF;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 5px;
+    line-height: 90px;
+}
+.head-div .team-name{
+
+}
+            .team-score{
+                background-color: #02024d;
+                color: white;
+                min-height: 40px;
+                padding: 10px;
+            }
 
 
 
 
 
+
+{#            style for polls#}
+.content ul{
+    list-style: none;
+}
     </style>
 
 </head>
@@ -746,6 +800,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d42308', end
       </div>
    <!-- Main Home Layout Ends -->
 
+   <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 

@@ -9,13 +9,13 @@ class ScoreLive(object):
         self.series_info = {'series_id':data['series']['id'],
                             'match_id': data['id'],
                             'series_name': data['series']['shortName'],
-                            'series_logo': data['series']['shieldImageUrl'],
+                            # 'series_logo': data['series']['shieldImageUrl'],
                             'homeTeam': data['homeTeam']['shortName'],
-                            'homeTeam_color': data['homeTeam']['teamColour'],
-                            'homeTeam_logo': data['homeTeam']['logoUrl'],
+                            # 'homeTeam_color': data['homeTeam']['teamColour'],
+                            # 'homeTeam_logo': data['homeTeam']['logoUrl'],
                             'awayTeam':data['awayTeam']['shortName'],
-                            'awayTeam_color': data['awayTeam']['teamColour'],
-                            'awayTeam_logo':data['awayTeam']['logoUrl'],
+                            # 'awayTeam_color': data['awayTeam']['teamColour'],
+                            # 'awayTeam_logo':data['awayTeam']['logoUrl'],
                             'homeScore': data['scores']['homeScore'],
                             'homeOvers': data['scores']['homeOvers'],
                             'awayScore': data['scores']['awayScore'],
@@ -53,7 +53,7 @@ class ScoreCard(object):
         # self.scorecard = {}
         self.batsmen = []
         self.bowlers= []
-        self.other_info= {}
+        self.other_info= []
 
 
     def getScoreCard(self, data):
@@ -70,3 +70,4 @@ class ScoreCard(object):
                 'wide': innings['wide'],
                 'noBall': innings['noBall'],
             }
+            # dict(zip('innings', innings))

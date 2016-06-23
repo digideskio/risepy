@@ -6,13 +6,13 @@ from flask import json
 from posts.getScore_info import ScoreLive, ScoreCard, TeamInfo
 from posts.commentry_parser import Commentry
 from posts.scoreboard import Score
-from .models import Posts
+from .models import Post
 import Get_Data
 
 def index(request):
     try:
-        post_list = Posts.objects.all().filter(featured_post = 'featured')
-    except Posts.DoesNotExist:
+        post_list = Post.objects.all().filter(featured_post = 'featured')
+    except Post.DoesNotExist:
         raise Http404("No MyModel matches the given query.")
 
     url = "http://caprodseacs03.cloudapp.net/matches?completedLimit=2&inProgressLimit=2&upcomingLimit=0&format=json"
@@ -59,13 +59,13 @@ def score(request, series_id=None, match_id=None):
     ob = ScoreCard()
     ob.getScoreCard(scoreCard)
     scoreList = ob.__dict__
-
+    print scoreList
     team1_batsmen = scoreList['batsmen'][0]
     team1_bowlers = scoreList['bowlers'][1]
     team2_batsmen = scoreList['batsmen'][1]
     team2_bowlers = scoreList['bowlers'][0]
     other_info = scoreList['other_info']
-    print other_info
+    print scoreList
     # team1_extra = scoreList['extras'][0]
     # team2_extra = scoreList['extras'][1]
     # otherInfo = scoreList['other_info'][1]
@@ -92,16 +92,16 @@ def score(request, series_id=None, match_id=None):
         'team2_bowlers': team2_bowlers,
         'otherinfo': other_info,
         # 'team1_extra':team1_extra,
-        # 'teamWin': scoreList['batsmen'][0],
-        # 'teamLost': scoreList['batsmen'][1],
-        # 'bowlersLost': scoreList['bowlers'][0]
+        'teamWin': scoreList['batsmen'][0],
+        'teamLost': scoreList['batsmen'][1],
+        'bowlersLost': scoreList['bowlers'][0]
     }
 
 
     return render(request, 'posts/score.html', context)
 
-def article(request, id=None):
-    post_detail = get_object_or_404(Posts, id=id)
+def article(request, slug=None):
+    post_detail = get_object_or_404(Post, slug=slug)
     context= {
         'details' : post_detail
     }

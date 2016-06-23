@@ -2,28 +2,51 @@
 {% load staticfiles %}
 {% block main %}
     <div class="container">
-        <div class="page-nav__offset row-fluid -bp20 -bp30-hdn" id="cricketHeader">
-            <div class="match-header mh-pre">
-                <div class="-center text-h5">Day 1 of 1</div>
-                <div class="row-table -bp20 -bp30">
-                    <div class="box col">
-                        <img class="badges -left img-circle" src="{{ teamNames.teamInfo.homelogo }}" alt="Badge">
-                        <h2 class="text-h1 -txt-right">{{ teamNames.teamInfo.hometeam }} </h2>
-                        <h3 class="text-h2 -txt-right" id="scoresum-Yorks">{{ teamNames.teamInfo.homeScore }}</h3>
-                    </div>
-                    <div class="box col span10 -center -bp20-hdn -bp30-hdn">
-                        <span class="text-h2 strap2 -interact">Result</span>
-                    </div>
-                    <div class="box col">
-                        <img class="badges -right img-circle" src="{{ teamNames.teamInfo.awaylogo }}" alt="Badge">
-                        <h2 class="text-h1">{{ teamNames.teamInfo.awayteam }}</h2>
-                        <h3 class="text-h2" id="scoresum-10">{{ teamNames.teamInfo.awayScore }}</h3>
+{#        <div class="page-nav__offset row-fluid -bp20 -bp30-hdn" id="cricketHeader">#}
+{#            <div class="match-header mh-pre">#}
+{#                <div class="-center text-h5">Day 1 of 1</div>#}
+{#                <div class="row-table -bp20 -bp30">#}
+{#                    <div class="box col">#}
+{#                        <img class="badges -left img-circle" src="{{ teamNames.teamInfo.homelogo }}" alt="Badge">#}
+{#                        <h2 class="text-h1 -txt-right">{{ teamNames.teamInfo.hometeam }} </h2>#}
+{#                        <h3 class="text-h2 -txt-right" id="scoresum-Yorks">{{ teamNames.teamInfo.homeScore }}</h3>#}
+{#                    </div>#}
+{#                    <div class="box col span10 -center -bp20-hdn -bp30-hdn">#}
+{#                        <span class="text-h2 strap2 -interact">Result</span>#}
+{#                    </div>#}
+{#                    <div class="box col">#}
+{#                        <img class="badges -right img-circle" src="{{ teamNames.teamInfo.awaylogo }}" alt="Badge">#}
+{#                        <h2 class="text-h1">{{ teamNames.teamInfo.awayteam }}</h2>#}
+{#                        <h3 class="text-h2" id="scoresum-10">{{ teamNames.teamInfo.awayScore }}</h3>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="-center text-h5">{{ teamNames.teamInfo.result }}</div>#}
+{#            </div>#}
+{#        </div>#}
+
+            <div class="row">
+        <div class="col-md-12 head-div">
+            <div class="row">
+                <div class="col-md-5">
+                    <img class="-left img-circle" src="{{ teamNames.teamInfo.homelogo }}" style="height: 106px;width: 106px">
+                    <h2 class="right">{{ teamNames.teamInfo.hometeam }} </h2>
+                    <h3 class="right team-score">{{ teamNames.teamInfo.homeScore }}</h3>
+                </div>
+                <div class="col-md-2 center">
+                    <div class="result">
+                        <h2 class="res">Result</h2>
                     </div>
                 </div>
-                <div class="-center text-h5">{{ teamNames.teamInfo.result }}</div>
+                <div class="col-md-5">
+                    <img class="-right img-circle" src="{{ teamNames.teamInfo.awaylogo }}" style="height: 106px;width: 106px">
+                    <h2 class="left">{{ teamNames.teamInfo.awayteam }} </h2>
+                    <h3 class="left team-score">{{ teamNames.teamInfo.awayScore }}</h3>
+                </div>
             </div>
-        </div>
 
+            <div style="background-color: #063d90;min-height: 15px;"></div>
+        </div>
+    </div>
 
         <section class="main-contents">
             <div class="row">

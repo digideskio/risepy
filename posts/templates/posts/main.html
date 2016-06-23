@@ -5,6 +5,30 @@
 
       <!-- Home Slider and Big news blocks -->
       <div class="container">
+        <div class="row">
+<div class="row">
+            <div class="col-md-12">
+                {% for match in match_list %}
+                    <div class="col-md-3" style=" border-left: 1px solid grey;border-right: 1px solid grey;" >
+                        <a href="score/{{ match.series_info.series_id|add:0 }}/{{ match.series_info.match_id|add:0 }}" class="match cricket clearfix ">
+                            <div class="clearfix ">
+                                <img alt="Australia" src="{{ match.series_info.homeTeam_logo }}" style="height: 30px; width: 30px">
+                                <h4 style="color:{{ match.series_info.homeTeam_color }}">{{ match.series_info.homeTeam }}</h4>
+                                <h3>{{ match.series_info.homeScore }} </h3>
+                            </div>
+                            <div class="clearfix winner">
+                                <img alt="South Africa"  src="{{ match.series_info.awayTeam_logo }}" style="height: 30px; width: 30px">
+                                <h4 style="color:{{ match.series_info.awayTeam_color }}" >{{ match.series_info.awayTeam }}</h4>
+                                <h3>{{ match.series_info.awayScore }} </h3>
+                            </div>
+                            <div class="clearfix">
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
          <div class="main-news-blks">
             <div class="hm-slider-cont">
                <!-- News slider -->
@@ -19,7 +43,7 @@
                                    <a href="#">{{ post.category_post }}</a>
                                </h3>
                                <div class="hm-sldr-caption">
-                                  <h3><a href="{% url 'article' id=post.id %}">{{ post.title }}</a></h3>
+                                  <h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
                                   <p>{{ post.content | truncatewords:30 }}</p>
                                </div>
                             </li>
@@ -416,24 +440,24 @@
             </div>
             <!-- Social Media Counter -->
             <div class="smedia lefty">
-               <h3 class="sec-title">Match Score</h3>
-                {% for match in match_list %}
-                   <a href="score/{{ match.series_info.series_id|add:0 }}/{{ match.series_info.match_id|add:0 }}" class="match cricket clearfix ">
-                        <div class="clearfix ">
-                            <img alt="Australia" src="{{ match.series_info.homeTeam_logo }}" style="height: 30px; width: 30px">
-                            <h4 style="color:{{ match.series_info.homeTeam_color }}">{{ match.series_info.homeTeam }}</h4>
-                            <h3>{{ match.series_info.homeScore }} </h3>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="content-padding">
+                            <h2 class="poll-name">Poll</h2>
                         </div>
-                        <div class="clearfix winner">
-                            <img alt="South Africa"  src="{{ match.series_info.awayTeam_logo }}" style="height: 30px; width: 30px">
-                            <h4 style="color:{{ match.series_info.awayTeam_color }}" >{{ match.series_info.awayTeam }}</h4>
-                            <h3>{{ match.series_info.awayScore }} </h3>
+                        <div class="content">
+                             <form action="" method="get" id="home_poll">
+                                <h3>Who should be India's next coach?</h3>
+                                <ul>
+                                    <li><input id="poll_5239" type="radio" value="5239" name="poll"><label for="poll_5239">Ravi Shastri</label></li>
+                                </ul>
+                                 <p><input type="submit" id="button" value="Submit"></p>
+                             </form>
                         </div>
-                        <div class="clearfix">
-                        </div>
-                    </a>
-                {% endfor %}
+                    </div>
+                </div>
             </div>
+
             <!-- Trending news right -->
             <div class="trending lefty">
                <h3 class="sec-title">TRENDING</h3>
@@ -473,7 +497,6 @@
             <!-- Flicker Widget -->
             <div class="flkr-cont lefty">
 
-<div class="PDS_Poll" id="PDI_container9433168"><div style="margin-bottom: 0px; margin-top: 0px;" name="PDI_form9433168" id="PDI_form9433168"><div class="pds-box"><div class="pds-box-outer"><div class="pds-box-inner"><div class="pds-box-top"><div class="pds-question"><div class="pds-question-outer"><div class="pds-question-inner"><div class="pds-question-top"> Who will win Euro 2016?</div></div></div></div><div class="pds-answer"><span id="pds-answer9433168"><span class="pds-answer-group"><span class="pds-answer-input"><input class="pds-radiobutton" type="radio" id="PDI_answer43030334" value="43030334" name="PDI_answer9433168"></span><label for="PDI_answer43030334" class="pds-input-label"><span class="pds-answer-span">England</span></label><span class="pds-clear"></span><br></span><span class="pds-answer-group"><span class="pds-answer-input"><input class="pds-radiobutton" type="radio" id="PDI_answer43030335" value="43030335" name="PDI_answer9433168"></span><label for="PDI_answer43030335" class="pds-input-label"><span class="pds-answer-span">Spain</span></label><span class="pds-clear"></span><br></span><span class="pds-answer-group"><span class="pds-answer-input"><input class="pds-radiobutton" type="radio" id="PDI_answer43030336" value="43030336" name="PDI_answer9433168"></span><label for="PDI_answer43030336" class="pds-input-label"><span class="pds-answer-span">France</span></label><span class="pds-clear"></span><br></span><span class="pds-answer-group"><span class="pds-answer-input"><input class="pds-radiobutton" type="radio" id="PDI_answer43030337" value="43030337" name="PDI_answer9433168"></span><label for="PDI_answer43030337" class="pds-input-label"><span class="pds-answer-span">Germany</span></label><span class="pds-clear"></span><br></span></span></div><div class="pds-vote"><div class="pds-votebutton-outer"><a id="pd-vote-button9433168" class="pds-vote-button"><span>Vote</span></a><span class="pds-links"><a href="javascript:PD_vote9433168(1);" class="pds-view-results">View Results</a><br><a href="http://polldaddy.com/signup-free/?ad=poll-front" target="_blank" class="pds-pd-link">Polldaddy.com</a><span class="pds-clear"></span></span><span class="pds-clear"></span></div></div></div></div></div></div></div></div>>
             </div>
             <!-- News letter subscription -->
             <div class="subscribe lefty">
@@ -570,5 +593,5 @@
             </div>
          </div>
       </div>
-
+    </div>
 {% endblock %}

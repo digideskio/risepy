@@ -1,5 +1,4 @@
 {% extends 'posts/base.html' %}
-{% load comments %}
 {% load staticfiles %}
 {% block main %}
 
@@ -55,12 +54,12 @@
                      <p class="artcl-qt">
                         <i class="fa fa-quote-left"></i>
                         <span>
-                        Proin porta arcu sollicitudin magna viverra commodo. In pellentesque turpis sapien, at tincidunt dolor fringilla nec. Maecenas sollicitudin metus eget 
-                        vestibulum luctus.                         
+                        Proin porta arcu sollicitudin magna viverra commodo. In pellentesque turpis sapien, at tincidunt dolor fringilla nec. Maecenas sollicitudin metus eget
+                        vestibulum luctus.
                         </span>
                      </p>
                      <p>
-                        Aliquam tristique vehicula nulla sit amet facilisis. Nulla ultrices vitae eros at semper. Donec sapien lacus, tincidunt sed sem quis, accumsan mollis eros. Aenean id enim dolor. Suspendisse potenti. Curabitur molestie dolor et urna tristique vehicula. Curabitur tincidunt congue porta. Duis condimentum accumsan erat nec consequat. 
+                        Aliquam tristique vehicula nulla sit amet facilisis. Nulla ultrices vitae eros at semper. Donec sapien lacus, tincidunt sed sem quis, accumsan mollis eros. Aenean id enim dolor. Suspendisse potenti. Curabitur molestie dolor et urna tristique vehicula. Curabitur tincidunt congue porta. Duis condimentum accumsan erat nec consequat.
                      </p>
                   </article>
                </div>
@@ -69,13 +68,14 @@
             <div class="artcl-scl float-width">
                <div class="lefty artcl-tags">
                   <h3>TAGS : </h3>
-                  <ul>
-                     <li><a href="#">famous, </a></li>
-                     <li><a href="#">artist, </a></li>
-                     <li><a href="#">dj, </a></li>
-                     <li><a href="#">hip hop, </a></li>
-                     <li><a href="#">rap</a></li>
-                  </ul>
+                   <ul>
+                      {% for tag in details.tags.all %}
+                          <li><a href="">{{ tag.name }}</a></li>
+                      {% empty %}
+                        <li>No Tags</li>
+                      {% endfor %}
+                    </ul>
+
                </div>
                <div class="righty artcl-shr">
                   <ul>
@@ -91,6 +91,7 @@
                   </ul>
                </div>
             </div>
+
             <!-- Article Author Bio -->
             <div class="author-bio float-width">
                <h3 class="float-width">john smithowsky</h3>
@@ -110,6 +111,9 @@
                   </ul>
                </div>
             </div>
+            <p><div class="fb-like" data-href="{{ request.build_absolute_uri }}" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+            <hr/>
+            </p>
             <!-- Article Comments Section -->
 {#            <div class="artcl-comments float-width">#}
 {#               <h3 class="sec-title">COMMENTS</h3>#}
@@ -192,8 +196,10 @@
 {#               </div>#}
 {#            </div>#}
 
-             <br>
-      {% get_comment_count for posts.Posts 14 as comment_count %}.
+
+
+        <div class="fb-comments" data-href="{{ request.build_absolute_uri }}" data-numposts="5"></div>
+
             <!-- related Articles  -->
             <div class="artcl-reltd float-width">
                <h3 class="sec-title">RELATED POSTS</h3>
