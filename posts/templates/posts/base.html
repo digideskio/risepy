@@ -43,76 +43,32 @@
 
         <style>
 
-        .smedia h3.sec-title {
-            font-family: BentonSansMedium, Arial, sans-serif;
-            padding: 10px 20px 10px 20px;
-            font-size: 19px;
-            font-weight: 700;
-            text-transform: uppercase;
-            margin: 0 0 19px 0;
-            color: #fff;
-            background-color: #439ec9;
-            display: block;
-            cursor: pointer;
-        }
 
-.match {
-    color: #fff;
+
+{#            live score  style#}
+.match{
+    background: #282c33;
     display: block;
-    float: left;
-    height: 8.8rem;
     padding: 10px;
 }
-
-.match.cricket>div:nth-child(-n+2) {
-    height: 2.2rem;
+.match:hover{
+    background: #708090;
+    text-decoration: none;
 }
-.match>div {
-    float: left;
-    text-align: center;
+.score-container{
+    padding-bottom: 20px;
 }
-.match>div {
-    display: table-row;
-}
-
-.match.cricket>div:nth-child(-n+2)>img {
-    float: left;
-    margin-right: .8rem;
-
-}
-.match.cricket>div:nth-child(-n+2)>h4 {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    color: #fff;
-    float: left;
-    text-align: left;
-
-}
-.match.cricket h4 {
-    font-family: "Segoe UI Semibold","Segoe WP Semibold","Segoe WP","Segoe UI",Arial,Sans-Serif;
-    font-size: 150%;
-    line-height: 1.384;
-    margin: 0;
+.score-container:first-child{
+    padding-left: initial;
 }
 
-
-.match.cricket>div:nth-child(-n+2)>h3 {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    float: right;
-    text-align: right;
-    width: 135px;
+.score-container:last-child{
+    padding-right: initial;
 }
 
-
-
-.match.cricket h3 {
-    line-height: 1.467;
-    margin: 0;
+.live-score tr td h3,.live-score tr td h4{
+    color: white;
 }
-
 
 {#scorecard#}
 
@@ -588,21 +544,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', end
                <div class="col-lg-8">
                   <!-- Main Menu -->
                   <ul id="main-menu-items" class="sm sm-menu menu-efct">
-                     <li class="active"><a href="#">News</a></li>
-                     <li><a href="#">Music</a></li>
-                     <li>
-                        <a href="#">Magalla Pages</a>
-                        <ul class="main-menu-sub">
-                           <li><a href="home-1.html">Home</a></li>
-                           <li><a href="single-cat.html">Single Category</a></li>
-                           <li><a href="article.html">Article</a></li>
-                           <li><a href="elements.html">Elements</a></li>
-                           <li><a href="contact.html">Contact us</a></li>
-                           <li><a href="rtl/home-1.html" target="blank">RTL Demo</a></li>
-                        </ul>
-                     </li>
+                     <li class="active"><a href="#">Home</a></li>
+                     <li><a href="#">Live Score</a></li>
+{#                     <li>#}
+{#                        <a href="#">Magalla Pages</a>#}
+{#                        <ul class="main-menu-sub">#}
+{#                           <li><a href="home-1.html">Home</a></li>#}
+{#                           <li><a href="single-cat.html">Single Category</a></li>#}
+{#                           <li><a href="article.html">Article</a></li>#}
+{#                           <li><a href="elements.html">Elements</a></li>#}
+{#                           <li><a href="contact.html">Contact us</a></li>#}
+{#                           <li><a href="rtl/home-1.html" target="blank">RTL Demo</a></li>#}
+{#                        </ul>#}
+{#                     </li>#}
                      <li class="mega-menu-li">
-                        <a href="#">Mega Menu</a>
+                        <a href="#">Featured News</a>
                         <!-- Main Menu - Mega Menu -->
                         <ul class="mega-menu">
                            <li>
@@ -643,7 +599,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', end
                         </ul>
                      </li>
                      <li>
-                        <a href="#">Games</a>
+                        <a href="#">Forum</a>
                         <ul class="main-menu-sub">
                            <li><a href="#">Top 100</a></li>
                            <li><a href="#">Awards</a></li>

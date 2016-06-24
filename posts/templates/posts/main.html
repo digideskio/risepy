@@ -6,23 +6,22 @@
       <!-- Home Slider and Big news blocks -->
       <div class="container">
         <div class="row">
-<div class="row">
             <div class="col-md-12">
                 {% for match in match_list %}
-                    <div class="col-md-3" style=" border-left: 1px solid grey;border-right: 1px solid grey;" >
-                        <a href="score/{{ match.series_info.series_id|add:0 }}/{{ match.series_info.match_id|add:0 }}" class="match cricket clearfix ">
-                            <div class="clearfix ">
-                                <img alt="Australia" src="{{ match.series_info.homeTeam_logo }}" style="height: 30px; width: 30px">
-                                <h4 style="color:{{ match.series_info.homeTeam_color }}">{{ match.series_info.homeTeam }}</h4>
-                                <h3>{{ match.series_info.homeScore }} </h3>
-                            </div>
-                            <div class="clearfix winner">
-                                <img alt="South Africa"  src="{{ match.series_info.awayTeam_logo }}" style="height: 30px; width: 30px">
-                                <h4 style="color:{{ match.series_info.awayTeam_color }}" >{{ match.series_info.awayTeam }}</h4>
-                                <h3>{{ match.series_info.awayScore }} </h3>
-                            </div>
-                            <div class="clearfix">
-                            </div>
+                    <div class="col-md-3 score-container" >
+                        <a href="score/{{ match.series_info.series_id|add:0 }}/{{ match.series_info.match_id|add:0 }}" class="match">
+                           <table style="width:100%" class="live-score">
+                              <tr>
+                                <td><img alt="{{ match.series_info.homeTeam }}" src="{{ match.series_info.homeTeam_logo }}" style="height: 30px; width: 30px"></td>
+                                <td><h4 style="color:{{ match.series_info.homeTeam_color }}">{{ match.series_info.homeTeam }}</h4></td>
+                                <td class="right"><h3>{{ match.series_info.homeScore }} </h3></td>
+                              </tr>
+                               <tr>
+                                <td><img alt="{{ match.series_info.awayTeam}}" src="{{ match.series_info.awayTeam_logo }}" style="height: 30px; width: 30px"></td>
+                                <td><h4 style="color:{{ match.series_info.awayTeam_color }}">{{ match.series_info.awayTeam }}</h4></td>
+                                <td><h3 class="right">{{ match.series_info.awayScore }} </h3></td>
+                              </tr>
+                           </table>
                         </a>
                     </div>
                 {% endfor %}

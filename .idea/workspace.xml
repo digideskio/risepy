@@ -14,9 +14,9 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/rot$tests.coverage" NAME="tests Coverage Results" MODIFIED="1466672265001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/posts" />
     <SUITE FILE_PATH="coverage/rot$with_json.coverage" NAME="with_json Coverage Results" MODIFIED="1465716448662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/rot$test.coverage" NAME="test Coverage Results" MODIFIED="1466020486819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/rot$tests.coverage" NAME="tests Coverage Results" MODIFIED="1466672265001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/posts" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -27,20 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rot/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1503">
-              <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rot/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
+            <state relative-caret-position="340">
               <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
               <folding />
             </state>
@@ -50,8 +40,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+            <state relative-caret-position="375">
+              <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -60,33 +50,44 @@
       <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/templates/posts/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="452" column="32" selection-start-line="452" selection-start-column="32" selection-end-line="452" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="517" column="20" selection-start-line="517" selection-start-column="20" selection-end-line="517" selection-end-column="20" />
+            <state relative-caret-position="68">
+              <caret line="10" column="56" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="56" />
               <folding>
-                <element signature="e#3134#3337#1#HTML" expanded="true" />
-                <element signature="e#5315#5600#2#HTML" expanded="true" />
-                <element signature="e#5742#6027#2#HTML" expanded="true" />
-                <element signature="e#6919#7128#2#HTML" expanded="true" />
+                <element signature="e#518#536#0#HTML" expanded="true" />
+                <element signature="e#716#749#0#HTML" expanded="true" />
+                <element signature="e#796#848#0#HTML" expanded="true" />
+                <element signature="e#1186#1219#0#HTML" expanded="true" />
+                <element signature="e#1266#1318#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="article.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/posts/templates/posts/article.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="116" column="28" selection-start-line="116" selection-start-column="28" selection-end-line="116" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="107" column="57" selection-start-line="107" selection-start-column="57" selection-end-line="107" selection-end-column="57" />
+            <state relative-caret-position="1326">
+              <caret line="87" column="31" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -98,8 +99,18 @@
         <entry file="file://$PROJECT_DIR$/posts/getScore_info.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="17" column="74" selection-start-line="16" selection-start-column="27" selection-end-line="17" selection-end-column="74" />
-              <folding />
+              <caret line="18" column="44" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="44" />
+              <folding>
+                <marker date="1466674263723" expanded="true" signature="35:1149" placeholder="..." />
+                <marker date="1466674263723" expanded="true" signature="121:1149" placeholder="..." />
+                <marker date="1466674263723" expanded="true" signature="150:1148" placeholder="..." />
+                <marker date="1466674263723" expanded="true" signature="1175:2240" placeholder="..." />
+                <marker date="1466674263723" expanded="true" signature="1199:1223" placeholder="..." />
+                <marker date="1466674263723" expanded="true" signature="1252:2240" placeholder="..." />
+                <marker date="1466674263723" expanded="true" signature="1278:2239" placeholder="..." />
+                <marker date="1466674263723" expanded="true" signature="2266:3007" placeholder="..." />
+                <marker date="1466674263723" expanded="true" signature="2290:2397" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,11 +118,9 @@
       <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="51">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -119,12 +128,99 @@
       <file leaf-file-name="score.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/posts/templates/posts/score.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-249">
-              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+            <state relative-caret-position="612">
+              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding>
-                <element signature="e#1741#1775#0#HTML" expanded="true" />
-                <element signature="e#2286#2320#0#HTML" expanded="true" />
-                <element signature="e#2547#2598#0#HTML" expanded="true" />
+                <marker date="1466667671897" expanded="true" signature="98:19694" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="2671:19686" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="2701:19670" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="2740:17759" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="2786:17736" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="2841:3276" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="2919:3245" placeholder="..." />
+                <marker date="1466667671897" expanded="false" signature="3012:3025" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="3348:10228" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="3408:6993" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="3532:6958" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="3691:6917" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="3748:4430" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="4474:5328" placeholder="{% for player in team1_batsmen ... %}" />
+                <marker date="1466667671897" expanded="true" signature="4576:5274" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="5331:5396" placeholder="                                        &lt;tr class=&quot;player-score... %}" />
+                <marker date="1466667671897" expanded="true" signature="5401:5483" placeholder="                                            &lt;td class=&quot;t-name text-h5&quot;&gt;Extras&lt;/t... %}" />
+                <marker date="1466667671897" expanded="true" signature="5488:5553" placeholder="                                            &lt;td class=&quot;t-detail... %}" />
+                <marker date="1466667671897" expanded="true" signature="5558:5637" placeholder="                                                {% for extras in team1_extra ... %}" />
+                <marker date="1466667671897" expanded="true" signature="5642:5723" placeholder="                                                    {{ extras }}lb, 4w,  2lb&lt;/t... %}" />
+                <marker date="1466667671897" expanded="true" signature="5733:5793" placeholder="                                                {% endfor ... %}" />
+                <marker date="1466667671897" expanded="true" signature="5798:5847" placeholder="                                            &lt;/t... %}" />
+                <marker date="1466667671897" expanded="true" signature="5852:5922" placeholder="                                            &lt;td class=&quot;t-runs&quot;&gt;10&lt;/t... %}" />
+                <marker date="1466667671897" expanded="true" signature="5927:5996" placeholder="                                            &lt;td class=&quot;t-balls&quot;&gt;&lt;/t... %}" />
+                <marker date="1466667671897" expanded="true" signature="6143:6209" placeholder="                                            &lt;td class=&quot;t-sr&quot;&gt;&lt;/t... %}" />
+                <marker date="1466667671897" expanded="true" signature="6214:6259" placeholder="                                        &lt;/t... %}" />
+                <marker date="1466667671897" expanded="true" signature="6329:6872" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="7028:8012" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="7088:7976" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="7092:7146" placeholder="                                    &lt;img src=&quot;{{  }}... %}" />
+                <marker date="1466667671897" expanded="true" signature="7274:7937" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="7321:7894" placeholder="{% for player in team1_batsmen ... %}" />
+                <marker date="1466667671897" expanded="true" signature="7429:7838" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="8169:10166" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="8293:10131" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="8452:10090" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="8509:9158" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="9202:10046" placeholder="{% for player in team2_bowlers ... %}" />
+                <marker date="1466667671897" expanded="true" signature="9304:9992" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="10234:10268" placeholder="                        acordion... %}" />
+                <marker date="1466667671897" expanded="true" signature="10321:10755" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="10399:10724" placeholder="..." />
+                <marker date="1466667671897" expanded="false" signature="10492:10505" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="10827:17707" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="10887:14472" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="11011:14437" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="11170:14396" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="11227:11909" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="11953:12807" placeholder="{% for player in team2_batsmen ... %}" />
+                <marker date="1466667671897" expanded="true" signature="12055:12753" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="12810:12875" placeholder="                                        &lt;tr class=&quot;player-score... %}" />
+                <marker date="1466667671897" expanded="true" signature="12880:12962" placeholder="                                            &lt;td class=&quot;t-name text-h5&quot;&gt;Extras&lt;/t... %}" />
+                <marker date="1466667671897" expanded="true" signature="12967:13032" placeholder="                                            &lt;td class=&quot;t-detail... %}" />
+                <marker date="1466667671897" expanded="true" signature="13037:13116" placeholder="                                                {% for extras in team1_extra ... %}" />
+                <marker date="1466667671897" expanded="true" signature="13121:13202" placeholder="                                                    {{ extras }}lb, 4w,  2lb&lt;/t... %}" />
+                <marker date="1466667671897" expanded="true" signature="13212:13272" placeholder="                                                {% endfor ... %}" />
+                <marker date="1466667671897" expanded="true" signature="13277:13326" placeholder="                                            &lt;/t... %}" />
+                <marker date="1466667671897" expanded="true" signature="13331:13401" placeholder="                                            &lt;td class=&quot;t-runs&quot;&gt;10&lt;/t... %}" />
+                <marker date="1466667671897" expanded="true" signature="13406:13475" placeholder="                                            &lt;td class=&quot;t-balls&quot;&gt;&lt;/t... %}" />
+                <marker date="1466667671897" expanded="true" signature="13622:13688" placeholder="                                            &lt;td class=&quot;t-sr&quot;&gt;&lt;/t... %}" />
+                <marker date="1466667671897" expanded="true" signature="13693:13738" placeholder="                                        &lt;/t... %}" />
+                <marker date="1466667671897" expanded="true" signature="13808:14351" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="14507:15491" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="14567:15455" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="14571:14625" placeholder="                                    &lt;img src=&quot;{{  }}... %}" />
+                <marker date="1466667671897" expanded="true" signature="14753:15416" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="14800:15373" placeholder="{% for player in team1_batsmen ... %}" />
+                <marker date="1466667671897" expanded="true" signature="14908:15317" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="15648:17645" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="15772:17610" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="15931:17569" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="15988:16637" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="16681:17525" placeholder="{% for player in team2_bowlers ... %}" />
+                <marker date="1466667671897" expanded="true" signature="16783:17471" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="17798:19659" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="17849:19644" placeholder="..." />
+                <marker date="1466667671897" expanded="false" signature="17918:17943" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="17944:19625" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="17996:18073" placeholder="..." />
+                <marker date="1466667671897" expanded="false" signature="18116:18128" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="18129:19606" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="18323:18358" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="18431:19583" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="18492:19556" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="18610:19525" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="18650:19486" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="18689:18838" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="18877:19023" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="19062:19230" placeholder="..." />
+                <marker date="1466667671897" expanded="true" signature="19269:19445" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -171,10 +267,10 @@
         <option value="$PROJECT_DIR$/posts/templates/posts/score.html" />
         <option value="$PROJECT_DIR$/posts/tests.py" />
         <option value="$PROJECT_DIR$/posts/getScore_info.py" />
-        <option value="$PROJECT_DIR$/posts/templates/posts/base.html" />
-        <option value="$PROJECT_DIR$/posts/templates/posts/main.html" />
         <option value="$PROJECT_DIR$/posts/models.py" />
         <option value="$PROJECT_DIR$/posts/views.py" />
+        <option value="$PROJECT_DIR$/posts/templates/posts/main.html" />
+        <option value="$PROJECT_DIR$/posts/templates/posts/base.html" />
       </list>
     </option>
   </component>
@@ -215,6 +311,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -318,7 +415,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -685,18 +781,18 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5646688" sideWeight="0.4795022" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31072554" sideWeight="0.4795022" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -924,7 +1020,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -936,10 +1031,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/templates/posts/article.html">
+    <entry file="file://$PROJECT_DIR$/rot/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+        <state relative-caret-position="714">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rot/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="87" column="31" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -952,88 +1073,158 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/posts/templates/posts/score.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-249">
-          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-          <folding>
-            <element signature="e#1741#1775#0#HTML" expanded="true" />
-            <element signature="e#2286#2320#0#HTML" expanded="true" />
-            <element signature="e#2547#2598#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/posts/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/posts/getScore_info.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="74" selection-start-line="16" selection-start-column="27" selection-end-line="17" selection-end-column="74" />
+          <caret line="18" column="44" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="44" />
+          <folding>
+            <marker date="1466674263723" expanded="true" signature="35:1149" placeholder="..." />
+            <marker date="1466674263723" expanded="true" signature="121:1149" placeholder="..." />
+            <marker date="1466674263723" expanded="true" signature="150:1148" placeholder="..." />
+            <marker date="1466674263723" expanded="true" signature="1175:2240" placeholder="..." />
+            <marker date="1466674263723" expanded="true" signature="1199:1223" placeholder="..." />
+            <marker date="1466674263723" expanded="true" signature="1252:2240" placeholder="..." />
+            <marker date="1466674263723" expanded="true" signature="1278:2239" placeholder="..." />
+            <marker date="1466674263723" expanded="true" signature="2266:3007" placeholder="..." />
+            <marker date="1466674263723" expanded="true" signature="2290:2397" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/templates/posts/score.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding>
+            <marker date="1466667671897" expanded="true" signature="98:19694" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="2671:19686" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="2701:19670" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="2740:17759" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="2786:17736" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="2841:3276" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="2919:3245" placeholder="..." />
+            <marker date="1466667671897" expanded="false" signature="3012:3025" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="3348:10228" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="3408:6993" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="3532:6958" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="3691:6917" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="3748:4430" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="4474:5328" placeholder="{% for player in team1_batsmen ... %}" />
+            <marker date="1466667671897" expanded="true" signature="4576:5274" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="5331:5396" placeholder="                                        &lt;tr class=&quot;player-score... %}" />
+            <marker date="1466667671897" expanded="true" signature="5401:5483" placeholder="                                            &lt;td class=&quot;t-name text-h5&quot;&gt;Extras&lt;/t... %}" />
+            <marker date="1466667671897" expanded="true" signature="5488:5553" placeholder="                                            &lt;td class=&quot;t-detail... %}" />
+            <marker date="1466667671897" expanded="true" signature="5558:5637" placeholder="                                                {% for extras in team1_extra ... %}" />
+            <marker date="1466667671897" expanded="true" signature="5642:5723" placeholder="                                                    {{ extras }}lb, 4w,  2lb&lt;/t... %}" />
+            <marker date="1466667671897" expanded="true" signature="5733:5793" placeholder="                                                {% endfor ... %}" />
+            <marker date="1466667671897" expanded="true" signature="5798:5847" placeholder="                                            &lt;/t... %}" />
+            <marker date="1466667671897" expanded="true" signature="5852:5922" placeholder="                                            &lt;td class=&quot;t-runs&quot;&gt;10&lt;/t... %}" />
+            <marker date="1466667671897" expanded="true" signature="5927:5996" placeholder="                                            &lt;td class=&quot;t-balls&quot;&gt;&lt;/t... %}" />
+            <marker date="1466667671897" expanded="true" signature="6143:6209" placeholder="                                            &lt;td class=&quot;t-sr&quot;&gt;&lt;/t... %}" />
+            <marker date="1466667671897" expanded="true" signature="6214:6259" placeholder="                                        &lt;/t... %}" />
+            <marker date="1466667671897" expanded="true" signature="6329:6872" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="7028:8012" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="7088:7976" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="7092:7146" placeholder="                                    &lt;img src=&quot;{{  }}... %}" />
+            <marker date="1466667671897" expanded="true" signature="7274:7937" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="7321:7894" placeholder="{% for player in team1_batsmen ... %}" />
+            <marker date="1466667671897" expanded="true" signature="7429:7838" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="8169:10166" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="8293:10131" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="8452:10090" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="8509:9158" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="9202:10046" placeholder="{% for player in team2_bowlers ... %}" />
+            <marker date="1466667671897" expanded="true" signature="9304:9992" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="10234:10268" placeholder="                        acordion... %}" />
+            <marker date="1466667671897" expanded="true" signature="10321:10755" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="10399:10724" placeholder="..." />
+            <marker date="1466667671897" expanded="false" signature="10492:10505" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="10827:17707" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="10887:14472" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="11011:14437" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="11170:14396" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="11227:11909" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="11953:12807" placeholder="{% for player in team2_batsmen ... %}" />
+            <marker date="1466667671897" expanded="true" signature="12055:12753" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="12810:12875" placeholder="                                        &lt;tr class=&quot;player-score... %}" />
+            <marker date="1466667671897" expanded="true" signature="12880:12962" placeholder="                                            &lt;td class=&quot;t-name text-h5&quot;&gt;Extras&lt;/t... %}" />
+            <marker date="1466667671897" expanded="true" signature="12967:13032" placeholder="                                            &lt;td class=&quot;t-detail... %}" />
+            <marker date="1466667671897" expanded="true" signature="13037:13116" placeholder="                                                {% for extras in team1_extra ... %}" />
+            <marker date="1466667671897" expanded="true" signature="13121:13202" placeholder="                                                    {{ extras }}lb, 4w,  2lb&lt;/t... %}" />
+            <marker date="1466667671897" expanded="true" signature="13212:13272" placeholder="                                                {% endfor ... %}" />
+            <marker date="1466667671897" expanded="true" signature="13277:13326" placeholder="                                            &lt;/t... %}" />
+            <marker date="1466667671897" expanded="true" signature="13331:13401" placeholder="                                            &lt;td class=&quot;t-runs&quot;&gt;10&lt;/t... %}" />
+            <marker date="1466667671897" expanded="true" signature="13406:13475" placeholder="                                            &lt;td class=&quot;t-balls&quot;&gt;&lt;/t... %}" />
+            <marker date="1466667671897" expanded="true" signature="13622:13688" placeholder="                                            &lt;td class=&quot;t-sr&quot;&gt;&lt;/t... %}" />
+            <marker date="1466667671897" expanded="true" signature="13693:13738" placeholder="                                        &lt;/t... %}" />
+            <marker date="1466667671897" expanded="true" signature="13808:14351" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="14507:15491" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="14567:15455" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="14571:14625" placeholder="                                    &lt;img src=&quot;{{  }}... %}" />
+            <marker date="1466667671897" expanded="true" signature="14753:15416" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="14800:15373" placeholder="{% for player in team1_batsmen ... %}" />
+            <marker date="1466667671897" expanded="true" signature="14908:15317" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="15648:17645" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="15772:17610" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="15931:17569" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="15988:16637" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="16681:17525" placeholder="{% for player in team2_bowlers ... %}" />
+            <marker date="1466667671897" expanded="true" signature="16783:17471" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="17798:19659" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="17849:19644" placeholder="..." />
+            <marker date="1466667671897" expanded="false" signature="17918:17943" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="17944:19625" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="17996:18073" placeholder="..." />
+            <marker date="1466667671897" expanded="false" signature="18116:18128" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="18129:19606" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="18323:18358" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="18431:19583" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="18492:19556" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="18610:19525" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="18650:19486" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="18689:18838" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="18877:19023" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="19062:19230" placeholder="..." />
+            <marker date="1466667671897" expanded="true" signature="19269:19445" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/templates/posts/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="116" column="28" selection-start-line="116" selection-start-column="28" selection-end-line="116" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/templates/posts/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="56" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="56" />
+          <folding>
+            <element signature="e#518#536#0#HTML" expanded="true" />
+            <element signature="e#716#749#0#HTML" expanded="true" />
+            <element signature="e#796#848#0#HTML" expanded="true" />
+            <element signature="e#1186#1219#0#HTML" expanded="true" />
+            <element signature="e#1266#1318#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/posts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/posts/templates/posts/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="517" column="20" selection-start-line="517" selection-start-column="20" selection-end-line="517" selection-end-column="20" />
-          <folding>
-            <element signature="e#3134#3337#1#HTML" expanded="true" />
-            <element signature="e#5315#5600#2#HTML" expanded="true" />
-            <element signature="e#5742#6027#2#HTML" expanded="true" />
-            <element signature="e#6919#7128#2#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/posts/templates/posts/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="452" column="32" selection-start-line="452" selection-start-column="32" selection-end-line="452" selection-end-column="32" />
+        <state relative-caret-position="250">
+          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rot/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1503">
-          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rot/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/posts/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/posts/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="107" column="57" selection-start-line="107" selection-start-column="57" selection-end-line="107" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
